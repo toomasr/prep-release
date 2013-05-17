@@ -11,4 +11,4 @@ You know this feeling when tests are not all green but you would like to believe
         $$("img[alt=\"In progress\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
         $$("img[alt=\"Unstable\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
         }())
-        '>Prep Release</a></h2>
+        '><img src="https://raw.github.com/toomasr/prep-release/master/prepare-release.png"/></a></h2>
