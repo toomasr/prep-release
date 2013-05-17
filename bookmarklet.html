@@ -11,12 +11,12 @@
 
 	<body>
 <a style="font-size:16pt" href='javascript:(function() {
-        $$("img[alt=\"Failed\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
-        $$("img[alt=\"Pending\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
-        $$("img[alt=\"Disabled\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
-        $$("img[alt=\"Aborted\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
-        $$("img[alt=\"In progress\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
-        $$("img[alt=\"Unstable\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+   for ($i=16; $i<=32; $i+=8)
+    $$("td[class!=healthReport]>img[class~=icon"+$i+"x"+$i+"]").each(
+      function(elem) {
+        elem.src=elem.src.substring(0, elem.src.lastIndexOf("/"))+"/blue.png";
+      }
+    );
         }())
         '>Prepare Release</a>
 	</body>
