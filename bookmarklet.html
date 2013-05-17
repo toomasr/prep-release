@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Bookmarklet</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css">
+			/* .table { background-image: url(/images/background2.jpg); } */
+		</style>
+		<!--script type="text/javascript" src="/buildmenu.js"></script-->
+	</head>
+
+	<body>
+<a style="font-size:16pt" href='javascript:(function() {
+        $$("img[alt=\"Failed\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        $$("img[alt=\"Pending\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        $$("img[alt=\"Disabled\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        $$("img[alt=\"Aborted\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        $$("img[alt=\"In progress\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        $$("img[alt=\"Unstable\"]").each(function(item){item.src=$$("img[alt=\"Success\"]").first().src});
+        }())
+        '>Prepare Release</a>
+	</body>
+</html>
